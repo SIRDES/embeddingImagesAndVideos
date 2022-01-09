@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Youtube clone</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button class="btn menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button class="btn home-btn">
+          <img src="images/YouTube-Logo.png" alt="youtube logo" />
+        </button>
+        <div class="search-bar">
+          <input class="search-input" type="text" placeholder="Search" />
+          <button class="btn search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="btn search-mic">
+            <i class="fas fa-microphone"></i>
+          </button>
+        </div>
+        <div class="user-options">
+          <button class="btn">
+            <!-- <img src="images/video-plus.svg" alt="add video" /> -->
+            <i class="fas fa-plus-square"></i>
+          </button>
+          <button class="btn apps-btn">
+            <!-- <img src="images/apps.svg" alt="apps" /> -->
+            <span class="fas fa-th"></span>
+          </button>
+          <button class="btn options-btn">
+            <!-- <img src="images/dots-vertical.svg" alt="options" /> -->
+            <i class="fas fa-bell"></i>
+          </button>
+          <button class="btn sign-btn">
+            <!-- <img src="images/account-circle.svg" alt="no user avatar" /> -->
+            <i class="fas fa-user-circle"></i>
+            <span>SIGN IN</span>
+          </button>
+        </div>
+      </header>
+      <!-- nav ends here -->
+      <div class="content">
+        <main>
+          <section class="video-container">
+            <div class="player">
+              <iframe
+                src="https://www.youtube.com/embed/xIJjcPHJFCI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h1 class="video-title">
+                Why Every Software Engineer Uses MacBook..
+              </h1>
+              <div class="video-primary-info">
+                <p class="video-views-date">420,964 viewsOct 15, 2020</p>
+                <div class="video-options">
+                  <div class="likes-percents">
+                    <button class="btn like-btn">
+                      <i class="far fa-thumbs-up"></i>
+                      <span class="likes">512K</span>
+                    </button>
+                    <button class="btn dislike-btn">
+                      <i class="far fa-thumbs-down"></i>
+                      <span>0</span>
+                    </button>
+                  </div>
+                  <button class="btn share-btn">
+                    <i class="fas fa-share"></i>
+                    <span>SHARE</span>
+                  </button>
+                  <button class="btn save-btn">
+                    <i class="far fa-save"></i>
+                    <span>SAVE</span>
+                  </button>
+                  <button class="btn more-options-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="description">
+            <div class="channel-info">
+              <div class="channel-logo">
+                <a
+                  href="https://www.youtube.com/user/TeamMojang"
+                  target="_blank"
+                >
+                  <img src="images/channels4_profile.jpg" alt="channel logo" />
+                </a>
+              </div>
+              <div class="channel-primary-info">
+                <div class="channel-name">
+                  <a
+                    class="channel-link"
+                    href="https://www.youtube.com/user/TeamMojang"
+                    target="_blank"
+                  >
+                    Soleyman Shahir
+                  </a>
+                </div>
+                <div class="channel-subscribers-count">8.1K subscribers</div>
+              </div>
+              <button class="btn subscribe-btn">SUBSCRIBE</button>
+            </div>
+            <div class="video-description">
+              <p class="video-description-para">
+                Why is it that most software engineers use MacOS, as an
+                operating system? <br /><br />
+                Well, the answer lies behind why every other operating system is
+                impractical and inefficient,
+              </p>
+
+              <button class="btn show-more-btn">SHOW MORE</button>
+            </div>
+          </section>
+        </main>
+        <aside>
+          <section>
+            <div class="related">
+              <button class="all">All</button>
+              <button>mac OS</button>
+              <button>Related</button>
+              <button>Watched</button>
+            </div>
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=zOjov-2OZ0E"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail1.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>1:59:09</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  Introduction to Programming and Computer Science - Full Course
+                </h3>
+                <div class="thumbnail-channel-name">
+                  freeCodeCamp.org
+                  <i class="far fa-check-circle"></i>
+                </div>
+                <p class="thumbnail-video-info">2.8M views . 1 year ago</p>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+          </section>
+          <section class="recommendations">
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=Fp2TlwW8Ejc"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail2.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>10:10</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  Villager vs Pillager Life 2 - Minecraft Animation
+                </h3>
+                <div class="thumbnail-channel-name">Alien Being</div>
+                <p class="thumbnail-video-info">Recommended for you</p>
+                <span class="thumbnail-new">New</span>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=YkINc028fs4"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail3.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>18:44</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  EVERYTHING in Minecraft 1.15 Buzzy Bees!
+                </h3>
+                <div class="thumbnail-channel-name">wattles</div>
+                <p class="thumbnail-video-info">363k views</p>
+                <span class="thumbnail-new">New</span>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=yz7x-PpUQxE"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail4.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>10:38</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  Minecraft NOOB vs PRO : HOW NOOB MAKE THIS RAREST SWORD IN
+                  DIAMOND ANVIL! Challenge 100% trolling
+                </h3>
+                <div class="thumbnail-channel-name">Noob & Pro - Minecraft</div>
+                <p class="thumbnail-video-info">Recommended for you</p>
+                <span class="thumbnail-new">New</span>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=Rl-SWiuZ24o"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail5.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>8:32</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  Village Raid (Minecraft Animation)
+                </h3>
+                <div class="thumbnail-channel-name">Black Plasma Studios</div>
+                <p class="thumbnail-video-info">Recommended for you</p>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=Sxxw3qtb3_g"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail6.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>11:37</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  19 Updates that Everyone Wants in Minecraft!
+                </h3>
+                <div class="thumbnail-channel-name">Sub's World</div>
+                <p class="thumbnail-video-info">694k views</p>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=MsMJeghxWnQ"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail7.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>10:29</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  DIAMOND FARM! SUPER COMBINE! IN MINECRAFT : NOOB vs PRO
+                </h3>
+                <div class="thumbnail-channel-name">Drev - Minecraft</div>
+                <p class="thumbnail-video-info">Recommended for you</p>
+                <span class="thumbnail-new">New</span>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=08gqHOY1c1Y"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail8.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>10:06</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  Evolution of Minecraft 2009-2020
+                </h3>
+                <div class="thumbnail-channel-name">Andrew Louis</div>
+                <p class="thumbnail-video-info">Recommended for you</p>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+            <a
+              class="thumbnail"
+              href="https://www.youtube.com/watch?v=ghTwo5Kvbmo"
+              target="_blank"
+            >
+              <div class="thumbnail-img">
+                <img src="images/thumbnail9.webp" alt="recommendation video" />
+                <div class="duration">
+                  <span>2:31</span>
+                </div>
+                <div class="thumbnail-img-overlay">
+                  <button class="btn">
+                    <i class="far fa-clock"></i>
+                  </button>
+                  <button class="btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="thumbnail-info">
+                <h3 class="thumbnail-title">
+                  MINECRAFT 1.15: Trailer Vs Reality
+                </h3>
+                <div class="thumbnail-channel-name">TheSamden</div>
+                <p class="thumbnail-video-info">Recommended for you</p>
+                <span class="thumbnail-new">New</span>
+              </div>
+              <div class="thumbnail-overlay">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </a>
+          </section>
+        </aside>
+        <section class="comment-section">
+          <div class="comments-info">
+            <span class="comments-count">1,725 Comments</span>
+            <button class="btn sort-btn">
+              <i class="fas fa-sort-amount-up-alt"></i>
+              SORT BY
+            </button>
+          </div>
+          <div class="new-comment">
+            <div class="user-avatar">
+              <img
+                src="//s.ytimg.com/yts/img/avatar_720-vflYJnzBZ.png"
+                alt="user avatar"
+              />
+            </div>
+            <input
+              class="comment-input"
+              type="text"
+              placeholder="Add a public comment..."
+            />
+          </div>
+          <div class="comment">
+            <div class="user-avatar">
+              <img
+                src="https://yt3.ggpht.com/a/AGF-l78vZoNvE4pPXoKWwB1miEObqUxursnGdb5t2Q=s48-c-k-c0xffffffff-no-rj-mo"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment-info">
+              <div class="comment-user">
+                <span class="user-name">Zanhir</span>
+                <span class="comment-time">6 days ago (edited)</span>
+              </div>
+              <div class="comment-text">
+                Everyone: "Why are bees so big?" <br />
+                Spiders: "Am i a joke to you?"
+              </div>
+              <div class="comment-options">
+                <button class="btn cm-like-btn">
+                  <i class="far fa-thumbs-up"></i>
+                  <span>6.5K</span>
+                </button>
+                <button class="btn cm-dislike-btn">
+                  <i class="far fa-thumbs-down"></i>
+                </button>
+                <button class="btn cm-reply-btn">
+                  <span>REPLY</span>
+                </button>
+              </div>
+              <button class="btn cm-show-replies-btn">
+                <span>View 79 replies</span>
+              </button>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="user-avatar">
+              <img
+                src="https://yt3.ggpht.com/a/AGF-l7-JmgvvTl3H5CwFhsNBMGDbjymSEI34gmr9IA=s48-c-k-c0xffffffff-no-rj-mo"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment-info">
+              <div class="comment-user">
+                <span class="user-name"> Bman </span>
+                <span class="comment-time">1 day ago</span>
+              </div>
+              <div class="comment-text">
+                Everyone: “cave update??” <br />
+                <br />
+                Minecraft: “ya like jazz”
+              </div>
+              <div class="comment-options">
+                <button class="btn cm-like-btn">
+                  <i class="far fa-thumbs-up"></i>
+                  <span>66</span>
+                </button>
+                <button class="btn cm-dislike-btn">
+                  <i class="far fa-thumbs-down"></i>
+                </button>
+                <button class="btn cm-reply-btn">
+                  <span>REPLY</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="user-avatar">
+              <img
+                src="https://yt3.ggpht.com/a/AGF-l78dyAA0npLfq1vhqDe-YYbVAulU3xgDz1ZnIw=s48-c-k-c0xffffffff-no-rj-mo"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment-info">
+              <div class="comment-user">
+                <span class="user-name">Huzaifa Yousaf </span>
+                <span class="comment-time">1 day ago</span>
+              </div>
+              <div class="comment-text">
+                <strong>“The bees are bee’ier than before.”</strong>
+              </div>
+              <div class="comment-options">
+                <button class="btn cm-like-btn">
+                  <i class="far fa-thumbs-up"></i>
+                  <span>34</span>
+                </button>
+                <button class="btn cm-dislike-btn">
+                  <i class="far fa-thumbs-down"></i>
+                </button>
+                <button class="btn cm-reply-btn">
+                  <span>REPLY</span>
+                </button>
+              </div>
+              <button class="btn cm-show-replies-btn">
+                <span>View reply</span>
+              </button>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="user-avatar">
+              <img
+                src="https://yt3.ggpht.com/a/AGF-l7_T78tz-NJZB93qCy5g6_HDMOsrKTrwHDQeGQ=s48-c-k-c0xffffffff-no-rj-mo"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment-info">
+              <div class="comment-user">
+                <span class="user-name">Billy Bob</span>
+                <span class="comment-time">2 days ago</span>
+              </div>
+              <div class="comment-text">
+                Everybody: Hows the cave update going? <br />
+                <br />
+                <br />
+                Minecraft: What cave update?
+              </div>
+              <div class="comment-options">
+                <button class="btn cm-like-btn">
+                  <i class="far fa-thumbs-up"></i>
+                  <span>329</span>
+                </button>
+                <button class="btn cm-dislike-btn">
+                  <i class="far fa-thumbs-down"></i>
+                </button>
+                <button class="btn cm-reply-btn">
+                  <span>REPLY</span>
+                </button>
+              </div>
+              <button class="btn cm-show-replies-btn">
+                <span>View 7 replies</span>
+              </button>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="user-avatar">
+              <img
+                src="https://yt3.ggpht.com/a/AGF-l7-qmbtd_ZVLaReCLv3o4eedwxD2Zqz_sx0whQ=s48-c-k-c0xffffffff-no-rj-mo"
+                alt="user avatar"
+              />
+            </div>
+            <div class="comment-info">
+              <div class="comment-user">
+                <span class="user-name">general gold742 </span>
+                <span class="comment-time">1 week ago</span>
+              </div>
+              <div class="comment-text">
+                I wish worlds were actually generated like this
+              </div>
+              <div class="comment-options">
+                <button class="btn cm-like-btn">
+                  <i class="far fa-thumbs-up"></i>
+                  <span>12K</span>
+                </button>
+                <button class="btn cm-dislike-btn">
+                  <i class="far fa-thumbs-down"></i>
+                </button>
+                <button class="btn cm-reply-btn">
+                  <span>REPLY</span>
+                </button>
+              </div>
+              <button class="btn cm-show-replies-btn">
+                <span>View 189 replies</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
